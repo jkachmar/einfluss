@@ -1,0 +1,24 @@
+{
+  "name": "einfluss",
+  "version": "0.0.0",
+  "description": "InfluxDB connector for TTN data.",
+  "main": "./bin/index.js",
+  "directories": {
+    "bin": "bin",
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "build": "pulp build --to ./bin/index.js",
+    "watch": "pulp -w build --to ./bin/index.js",
+    "start": "node ./bin/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "text-encoding": "^0.6.4",
+    "xhr2": "^0.1.4"
+  },
+  "devDependencies": {}
+}
