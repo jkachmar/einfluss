@@ -43,6 +43,9 @@ to `localhost/api/ttn-influx`, or deployed by giving it a publicly accessible
 address and connecting the `/api/ttn-influx` endpoint to [The Things Network]'s
 [HTTP Integration] service.
 
+Example payload data, and some test functions, can be found in the 
+[Einfluss.TestRequest](src/Einfluss/TestRequest.purs) module.
+
 ## ACHTUNG!
 
 Currently the service decodes [The Things Network] payloads into a `StrMap` of 

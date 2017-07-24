@@ -1,41 +1,21 @@
-module Einfluss.Prelude
-  ( module Prelude
-  , module Control.Monad.Aff
-  , module Control.Monad.Aff.Class
-  , module Control.Monad.Eff
-  , module Control.Monad.Eff.Class
-  , module Control.Parallel
-  , module Data.Array
-  , module Data.Bifunctor
-  , module Data.DateTime.Instant
-  , module Data.Either
-  , module Data.Generic.Rep
-  , module Data.Generic.Rep.Show
-  , module Data.Maybe
-  , module Data.Newtype
-  , module Data.StrMap
-  , module Data.Traversable
-  , module Data.Tuple
-  , module Data.Tuple.Nested
-  , module Math
-  ) where
+module Einfluss.Prelude ( module X ) where
 
-import Prelude
-import Control.Monad.Aff (Aff)
-import Control.Monad.Aff.Class (liftAff)
-import Control.Monad.Eff (Eff)
-import Control.Monad.Eff.Class (liftEff)
-import Control.Parallel (parTraverse)
-import Data.Array (zip)
-import Data.Bifunctor (lmap)
-import Data.DateTime.Instant (Instant, unInstant)
-import Data.Either (Either(..), either, note)
-import Data.Generic.Rep (class Generic)
-import Data.Generic.Rep.Show (genericShow)
-import Data.Maybe (Maybe(..), fromMaybe, maybe)
-import Data.Newtype (class Newtype, unwrap)
-import Data.StrMap (StrMap, keys, values)
-import Data.Traversable (traverse_)
-import Data.Tuple (Tuple)
-import Data.Tuple.Nested ((/\))
-import Math (pow)
+import Prelude as X
+import Control.Monad.Aff (Aff) as X
+import Control.Monad.Aff.Class (liftAff) as X
+import Control.Monad.Eff (Eff) as X
+import Control.Monad.Eff.Class (liftEff) as X
+import Control.Parallel (parTraverse) as X
+import Data.Array (zip) as X
+import Data.Bifunctor (lmap) as X
+import Data.DateTime.Instant (Instant, unInstant) as X
+import Data.Either (Either(..), either, note) as X
+import Data.Generic.Rep (class Generic) as X
+import Data.Generic.Rep.Show (genericShow) as X
+import Data.Maybe (Maybe(..), fromMaybe, maybe) as X
+import Data.Newtype (class Newtype, unwrap) as X
+import Data.StrMap (StrMap, keys, values) as X
+import Data.Traversable (traverse_) as X
+import Data.Tuple (Tuple) as X
+import Data.Tuple.Nested ((/\)) as X
+import Math (pow) as X
